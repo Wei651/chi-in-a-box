@@ -17,6 +17,9 @@ jobs:
       - name: test cc-ansible init
         shell: bash
         run: "./cc-ansible init"
+      - name: test cc-ansible bootstrap
+        shell: bash
+        run: "./cc-ansible bootstrap-servers"
       - name: test cc-ansible genconfig
         shell: bash
         run: "./cc-ansible genconfig"
