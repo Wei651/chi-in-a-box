@@ -1,6 +1,9 @@
 ---
 backup_database_user: backup
 
+deployment_dir: hostvars[groups['mariadb'][0]]['deployment_dir']
+deployment_site_config_dir: hostvars[groups['mariadb'][0]]['site_config_dir']
+mariadb_backup_timer_suffix: "{{ hostvars[groups['mariadb'][0]]['site_config_dir'] | basename }}"
 mariadb_backup_cron_script: /usr/local/sbin/mariadb-backup
 mariadb_backup_max_packet: 1M
 mariadb_backup_file_age: 29
