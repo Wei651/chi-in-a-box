@@ -10,7 +10,7 @@ kolla_install_type: source
 
 # Disable addition of tag for CentOS8
 # Remove this if pulling CentOS8 containers
-openstack_tag_suffix: ''
+openstack_tag_suffix: ""
 
 virtualenv: /etc/ansible/venv
 
@@ -167,15 +167,10 @@ enable_jupyterhub_external_frontend: "{{ enable_jupyterhub_external }}"
 
 # Neutron
 enable_neutron: yes
-enable_openvswitch: yes
-enable_neutron_fwaas: yes
-neutron_fwaas_version: v2
 # Enable notifications for Experiment Precis
 neutron_notification_topics:
   - name: notifications
     enabled: yes
-neutron_type_drivers: flat,vlan
-neutron_tenant_network_types: vlan
 # Only relevant when running in debug mode, but allows
 # debugging the NGS plugin.
 neutron_dev_plugins:
@@ -241,7 +236,7 @@ redfish_monitor_openstack_password: "{{ keystone_admin_password }}"
 redfish_monitor_openstack_project_name: "{{ keystone_admin_project }}"
 
 # Swift
-rgw_port: 7480  # Override non-standard KA default of 6780
+rgw_port: 7480 # Override non-standard KA default of 6780
 # Disable complete rgw compatibility for now. If Ceph has these options set,
 # it is considered "compatible":
 #   rgw_swift_url_prefix = "/"
@@ -250,7 +245,7 @@ rgw_port: 7480  # Override non-standard KA default of 6780
 # This just means we expose swift on the /swift path prefix from Ceph, as it
 # is also supporting S3's API on a different path prefix.
 ceph_rgw_compatibility: no
-swift_keystone_user: ceph  # For legacy reasons, this is different than default
+swift_keystone_user: ceph # For legacy reasons, this is different than default
 enable_swift: no
 enable_swift_rgw: no
 
