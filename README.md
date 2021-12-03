@@ -1,8 +1,7 @@
 # chi-in-a-box
 
-![chi-in-a-box](./chi-in-a-box.png)
 
-CHI-in-a-box is a packaging of the implementation of the core services that together constitute the [Chameleon testbed](https://www.chameleoncloud.org/) for experimental Computer Science research. These services allow Chameleon users to discover information about Chameleon resources, allocate those resources for present and future use, configure them in various ways, and monitor various types of metrics.
+ARA-in-a-box is a packaging of the implementation of the core services that together constitute the [Chameleon testbed](https://www.chameleoncloud.org/) for experimental Computer Science research. These services allow Chameleon users to discover information about Chameleon resources, allocate those resources for present and future use, configure them in various ways, and monitor various types of metrics.
 
 ### Currently included with CHI-in-a-Box:
 
